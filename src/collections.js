@@ -1,3 +1,3 @@
 export const cols = {
-    XXX:"XXX"
+    SELECTION:"SelectionCollection"
 }
