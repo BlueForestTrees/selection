@@ -1,6 +1,6 @@
 {
   "name": "selection",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "selection de produits par d'autres",
   "main": "dist/index.js",
   "repository": "https://github.com/BlueForestTrees/selection.git",
@@ -33,7 +33,7 @@
   "dependencies": {
     "cross-env": "5.2.0",
     "debug": "3.1.0",
-    "express-blueforest": "1.0.18",
+    "express-blueforest": "1.0.20",
     "express-validator": "5.3.0",
     "jsonwebtoken": "^8.4.0",
     "lodash": "4.17.10",
