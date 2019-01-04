@@ -6,7 +6,7 @@ import {
     setUserIdIn,
     validId,
     validUser,
-    validOwner, validTrunkId, validQuantity, validRepeted, validFreq, validDuree, validName
+    validOwner, validTrunkId, validQuantity, validRepeted, validFreq, validDuree, validOptionalName
 } from "../validations"
 
 const router = Router()
@@ -20,7 +20,7 @@ router.put("/api/selection",
     validRepeted,
     validFreq,
     validDuree,
-    validName,
+    validOptionalName,
     validUser,
     validOwner(col(ENV.DB_COLLECTION)),
     run(setUserIdIn("oid")),

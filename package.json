@@ -1,6 +1,6 @@
 {
   "name": "selection",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "selection de produits par d'autres",
   "main": "dist/index.js",
   "repository": "https://github.com/BlueForestTrees/selection.git",

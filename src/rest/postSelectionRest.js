@@ -1,7 +1,7 @@
 import {run, Router} from 'express-blueforest'
 import {col} from "mongo-registry"
 import ENV from "./../env"
-import {setUserIdIn, validId, validTrunkId, validDuree, validFreq, validName, validQuantity, validRepeted, validUser} from "../validations"
+import {setUserIdIn, validId, validTrunkId, validDuree, validFreq, validOptionalName, validQuantity, validRepeted, validUser} from "../validations"
 
 const router = Router()
 
@@ -14,7 +14,7 @@ router.post(`/api/selection`,
     validRepeted,
     validFreq,
     validDuree,
-    validName,
+    validOptionalName,
     validUser,
     run(setUserIdIn("oid")),
     run(s => col(ENV.DB_COLLECTION).insertOne(s).then(res => res.result))

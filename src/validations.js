@@ -45,7 +45,7 @@ export const validDuree = [
     grandeur(check("duree.g")),
     number(check("duree.bqt")),
 ]
-export const validName = check("name").exists().isLength({min: 2, max: 30})
+export const validOptionalName = check("name").optional().exists().isLength({max: 30})
 
 export const validOwner = (col, field = "_id") => run(async (o, req) => {
     const doc = await col.findOne({_id: o[field]})
